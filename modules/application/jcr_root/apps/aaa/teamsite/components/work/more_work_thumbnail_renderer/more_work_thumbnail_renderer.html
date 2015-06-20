@@ -1,0 +1,20 @@
+<div data-sly-use.teamsitePage="apps.aaa.teamsite.pages.page.TeamsitePage" class="work-thumbnail">
+    <a href="${workResource.workPagePath}.html" data-sly-use.workResource="MoreWorkThumbnailRenderer">
+        <div data-picture data-alt='${workResource.title} thumbnail' data-sly-test="${workResource.thumbnailImageBasePath}">
+            <div data-src='${workResource.thumbnailImageBasePath}.img.102.low.png' data-media="(min-width: 1px)"></div> <!-- Small mobile -->
+            <div data-src='${workResource.thumbnailImageBasePath}.img.102.low.png' data-media="(min-width: 320px)"></div>  <!-- Portrait mobile -->
+            <div data-src='${workResource.thumbnailImageBasePath}.img.102.medium.png' data-media="(min-width: 321px)"></div>  <!-- Landscape mobile -->
+            <div data-src='${workResource.thumbnailImageBasePath}.img.203.medium.png' data-media="(min-width: 481px)"></div>   <!-- Portrait iPad -->
+            <div data-src='${workResource.thumbnailImageBasePath}.img.403.high.png' data-media="(min-width: 769px)"></div>  <!-- Landscape iPad -->
+            <div data-src='${workResource.thumbnailImageBasePath}.img.403.high.png' data-media="(min-width: 1025px)"></div> <!-- Desktop -->
+
+            <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+            <noscript>
+                <img src='${workResource.thumbnailImageBasePath}.img.320.low.png' alt='${workResource.title} thumbnail'>
+            </noscript>
+        </div>
+        <div data-sly-test="${!workResource.thumbnailImageBasePath}" style="width:100px;height: 100px;border: 1px solid #000000">
+            <h1>No thumbnail</h1>
+        </div>
+    </a>
+</div>

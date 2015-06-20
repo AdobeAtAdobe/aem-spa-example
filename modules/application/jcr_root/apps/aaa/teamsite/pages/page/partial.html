@@ -1,0 +1,14 @@
+<div data-sly-use.head="head.js" data-sly-unwrap>
+    <meta property="partial:title" content="${head.title}" id="partialTitle">
+    <meta name="partial:keywords" content="${head.keywords}" id="partialKeywords"/>
+    <meta name="partial:description" content="${head.description}" id="partialDescription"/>
+    <meta name="partial:directLink" content="${request.requestURI}" id="partialDirectLink"/>
+</div>
+<div data-sly-include="content.html"></div>
+
+<!--
+    reinit the cloud services with the new partial load --- THIS SHOULD/COULD BE WAY CLEANER AND LESS OVERHEAD
+    it would be nice to break up the cloudservice lib loading from the inline init code. then we could load the libs once
+    then inline the script without reloading all the libs
+-->
+<div data-sly-resource="${'cloudservices' @ resourceType='cq/cloudserviceconfigs/components/servicecomponents'}" data-sly-unwrap></div>

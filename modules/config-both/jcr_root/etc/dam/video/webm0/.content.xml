@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2015-03-27T12:16:25.008-07:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/libs/dam/templates/s7videoprofile"
+        jcr:lastModified="{Date}2015-03-27T12:16:25.007-07:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="WebM"
+        sling:resourceType="dam/components/video/s7profile"
+        cloudConfig="None"
+        htmlType="video/webm; codecs=&quot;vp8, vorbis&quot;"/>
+</jcr:root>

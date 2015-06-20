@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2015-06-04T14:01:06.052-07:00"
+        cq:lastModifiedBy="admin"
+        cq:tags="[]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="ClientContext"
+        sling:resourceType="cq/personalization/components/clientcontextdesigner">
+        <stores
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="cq/personalization/components/clientcontextdesigner/parsys">
+            <profiledata
+                jcr:created="{Date}2011-08-22T16:34:33.783+02:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2011-12-15T08:40:55.488-08:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/personalization/components/contextstores/profiledata"
+                anonymousAuthorizableId="anonymous"
+                properties="[authorizableId,formattedName,gender,givenName,familyName,birthday,age,avatar,aboutMe,memberSince]"
+                thumbnail="avatar"/>
+            <genericstorerenderer_0
+                jcr:created="{Date}2011-08-24T11:06:57.651+02:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2012-08-29T08:41:15.837+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/personalization/components/contextstores/surferinfo"
+                properties="[browser_i18n,IP,OS_i18n,keywords,resolution,device,browserFamily_i18n,mouse X,mouse Y]"
+                store="surferinfo"
+                thumbnail="thumbnail"/>
+            <campaign
+                jcr:created="{Date}2012-10-12T12:07:40.499+03:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2012-10-12T12:07:40.499+03:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/personalization/components/contextstores/campaign"/>
+            <tagcloud
+                jcr:created="{Date}2011-08-29T15:21:20.705+02:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2011-08-29T15:21:20.705+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/personalization/components/contextstores/tagcloud"/>
+            <resolvedsegments
+                jcr:created="{Date}2011-09-29T14:55:58.117+02:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2011-09-29T14:55:58.117+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/personalization/components/contextstores/resolvedsegments"/>
+        </stores>
+    </jcr:content>
+</jcr:root>

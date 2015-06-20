@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <images/>
+    <elements.less/>
+    <variables.less/>
+    <jcr:content
+        cq:doctype="html_5"
+        cq:lastModified="{Date}2015-03-07T23:56:15.798-08:00"
+        cq:lastModifiedBy="admin"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Team Site Design"
+        jcr:uuid="9e8181ed-cd69-470d-9f77-f082b9b48420"
+        sling:resourceType="wcm/core/components/designer">
+        <page jcr:primaryType="nt:unstructured">
+            <clientcontext
+                jcr:lastModified="{Date}2013-05-14T16:00:55.000+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/personalization/components/clientcontext"
+                path="/etc/clientcontext/teamsite"
+                segmentPath="/etc/segmentation/teamsite"/>
+            <nav
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aaa/teamsite/pages/page/nav"/>
+        </page>
+        <work jcr:primaryType="nt:unstructured">
+            <sections-container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/parsys"
+                components="[/libs/wcm/foundation/components/image,/libs/wcm/foundation/components/list,/libs/wcm/foundation/components/textimage,/libs/wcm/foundation/components/text,/libs/wcm/foundation/components/title,group:Team Site - Work,group:Team Site]"/>
+            <nav
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aaa/teamsite/pages/page/nav"/>
+            <more jcr:primaryType="nt:unstructured">
+                <more-work
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys"
+                    components="/apps/aaa/teamsite/components/work/more_work_thumbnail_renderer">
+                    <section jcr:primaryType="nt:unstructured"/>
+                </more-work>
+            </more>
+        </work>
+        <work_listing jcr:primaryType="nt:unstructured">
+            <work-reel
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aaa/teamsite/components/video"/>
+            <work-reel
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aaa/teamsite/components/video"/>
+        </work_listing>
+        <explore jcr:primaryType="nt:unstructured">
+            <work-explorer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/parsys"
+                components="[aaa/teamsite/components/work/work_explore_video]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </work-explorer>
+        </explore>
+    </jcr:content>
+    <clientlib-all/>
+    <clientlib-enquire/>
+    <trunk8/>
+</jcr:root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="dam/components/dynamicmedia/license"
+    dynamicMediaEnabled="{Boolean}true"
+    dynamicMediaGroupName="Dynamic Media"
+    dynamicMediaS7Components="[dam/components/scene7/dynamicimage,dam/components/scene7/image,dam/components/scene7/video]"
+    oldGroup="Scene7">
+    <rep:policy/>
+</jcr:root>

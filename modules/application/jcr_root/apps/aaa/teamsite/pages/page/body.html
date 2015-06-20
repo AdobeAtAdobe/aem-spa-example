@@ -1,0 +1,76 @@
+<div data-sly-resource="${'clientcontext' @ resourceType='cq/personalization/components/clientcontext'}" data-sly-unwrap></div>
+
+<div data-sly-use.teamsitePage="TeamsitePage"
+     data-sly-unwrap>
+    <header ng-controller="NavContoller" id="pageHeader">
+        <div class="logo brownish">
+            <span>Adobe&#64;Adobe</span>
+        </div>
+        <div class="nav-icon nav-icon-open">
+          <!--  <div id="Stage" class="EDGE-80538998" ng-click="toggleMenu();"></div>-->
+
+            <div id="hamburger" ng-click="toggleMenu();" class="hamburglar is-closed">
+                <div class="burger-icon">
+                    <div class="burger-container">
+                        <span class="burger-bun-top"></span>
+                        <span class="burger-filling"></span>
+                        <span class="burger-bun-bot"></span>
+                    </div>
+                </div>
+
+                <!-- svg ring containter -->
+                <div class="burger-ring">
+                    <svg class="svg-ring">
+                        <path class="path" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4" d="M 34 2 C 16.3 2 2 16.3 2 34 s 14.3 32 32 32 s 32 -14.3 32 -32 S 51.7 2 34 2" />
+                    </svg>
+                </div>
+                <!-- the masked path that animates the fill to the ring -->
+                <svg width="0" height="0">
+                    <mask id="mask">
+                        <path xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ff0000" stroke-miterlimit="10" stroke-width="4" d="M 34 2 c 11.6 0 21.8 6.2 27.4 15.5 c 2.9 4.8 5 16.5 -9.4 16.5 h -4" />
+                    </mask>
+                </svg>
+                <div class="path-burger" style="-webkit-mask: url(#mask);mask: url(#mask);">
+                    <div class="animate-path">
+                        <div class="path-rotation"></div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!--
+            <a class="hamburger" ng-click="showMenu();" href="" title="Navigation"></a></div>
+            <div class="nav-icon nav-icon-close" ng-click="closeMenu();"></div>
+            -->
+        </div>
+    </header>
+
+    <div data-sly-resource="${'nav' @ resourceType='aaa/teamsite/pages/page/nav'}" data-sly-unwrap></div>
+
+
+    <div class="page-content" ui-view data-sly-test="${teamsitePage.isPublisher && !teamsitePage.isSearchEngine}"></div>
+    <div data-sly-include="content.html" class="page-content" data-sly-test="${!teamsitePage.isPublisher || teamsitePage.isSearchEngine}"></div>
+
+    <footer class="content">
+        <div class="limited-width">
+            <div class="logo">&nbsp;</div>
+            <div class="statement">Love what you do.</div>
+            <div class="links">
+                <div class="copyright">&copy; 2015 Adobe. All Rights Reserved</div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="https://twitter.com/AdobeAtAdobe" rel="external">Twitter:&#64;AdobeAtAdobe</a></li>
+                    </ul>
+                </div>
+                <div class="nav-mobile">
+                    <a href="http://twitter.com"><img src="${currentDesign.path}/images/footerTwitterIcon.png"></a>
+                    <a href="http://facebook.com"><img src="${currentDesign.path}/images/footerFacebookIcon.png"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div data-sly-test="${!teamsitePage.isPublisher}" data-sly-resource="${'cloudservices' @ resourceType='cq/cloudserviceconfigs/components/servicecomponents'}" data-sly-unwrap></div>
+    <sly data-sly-include="customfooterlibs.html" />
+</div>

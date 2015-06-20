@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>FileVault Package Properties</comment>
+<entry key="acHandling">Ignore</entry>
+<entry key="createdBy">admin</entry>
+<entry key="name">CUSH</entry>
+<entry key="lastModified">2013-03-13T14:40:19.842-07:00</entry>
+<entry key="lastModifiedBy">admin</entry>
+<entry key="created">2013-03-13T14:40:21.779-07:00</entry>
+<entry key="buildCount">5</entry>
+<entry key="version">4.1</entry>
+<entry key="dependencies"/>
+<entry key="packageFormatVersion">2</entry>
+<entry key="description">Jenkins Build Tag: ${BUILD_TAG}&#13;
+2.0- Added list page.&#13;
+3.0 - adding design and the work from today&#13;
+4.0 - exporting for GIT&#13;
+4.1 - updates pre intellij&#13;
+</entry>
+<entry key="lastWrapped">2013-03-13T14:40:19.842-07:00</entry>
+<entry key="group">aaa</entry>
+<entry key="lastWrappedBy">admin</entry>
+</properties>

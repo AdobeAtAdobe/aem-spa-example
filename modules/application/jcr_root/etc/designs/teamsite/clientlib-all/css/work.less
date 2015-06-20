@@ -1,0 +1,508 @@
+@import "/etc/designs/teamsite/variables";
+@import "/etc/designs/teamsite/elements";
+
+article {
+  &.work{
+    padding-top: 8rem;
+    width: 100%;
+    h3{
+      color:  #333333;
+      font-size: 25px;
+      font-weight: 400;
+      line-height: 30px;
+      text-align: left;
+      padding: 1rem 1rem 1rem 0rem;
+    }
+
+    .hero-text{
+      font-family: @fontFamily;
+      color: #000000;
+      font-size: 70px;
+      font-weight: 700;
+      line-height: 70px;
+      text-align: center;
+      margin-left: 12.5%;
+      margin-right: 12.5%;
+    }
+
+    .hero-summary{
+      font-family: @fontFamily;
+      color: #aaaaaa;
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 30.8px;
+      text-align: center;
+      margin-top: 1rem;
+      margin-left: 14vw;
+      margin-right: 14vw;
+    }
+
+    div.content{
+      background-color:  #eeeeee;
+      position: relative;
+      font-family: @fontFamily;
+      font-size: 22px;
+      font-weight: 300;
+      line-height: 33px;
+      text-align: left;
+      color:  #333333;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+      overflow: auto;
+
+      .bar{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        background-color:  rgba(204, 204, 204, 0.4);
+        width: 100%;
+        height: 10px;
+      }
+
+      .sectionsContainer {
+        width: 75%;
+        float: left;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        section.top{
+          width: 100%;
+
+          &:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+        }
+
+        section.bottom{
+          width: 100%;
+          margin-top: 2rem;
+        }
+
+        section.top p{
+          width: 100%;
+          float: left;
+        }
+      }
+
+      aside{
+        width: 25%;
+        padding-left: 2rem;
+        float: left;
+        color:  #666666;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.2px;
+        text-align: left;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        .logo{
+          margin-bottom: 2rem;
+        }
+
+        .name{
+          color: #666666;
+          font-size: 22px;
+          font-weight: 300;
+          line-height: 26.4px;
+          text-align: left;
+          margin-bottom: 1rem;
+        }
+
+        .description{
+          color: #333333;
+          font-size: 22px;
+          font-weight: 400;
+          line-height: 26.4px;
+          text-align: left;
+          margin-bottom: 1rem;
+        }
+      }
+
+    }
+  }
+}
+
+.more {
+  width: 100%;
+  margin-bottom: 20px;
+
+  label{
+    font-size: 50px;
+    color: #333333;
+    text-align: center;
+    vertical-align: middle;
+    display: block;
+    padding-top: 70px;
+  }
+
+  .down{
+    width: 100%;
+    height: 30px;
+    background-image: url("../../images/blackArrowDown.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+  }
+
+  .work-carousel{
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: -40px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .work-carousel .more_work_thumbnail_renderer{
+    display: inline-block;
+  }
+
+  .work-carousel .work-thumbnail{
+    display: inline-block;
+  }
+
+  .work-carousel img{
+    width: 403px;
+    height: 326px;
+  }
+}
+
+
+.hero-carousel{
+  position: relative;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+
+  .media-area-wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    max-width: 1313px;
+    max-height: 715px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+
+  .carousel{
+    width: 100%;
+    height: 100%;
+
+    li.page{
+      background-size: cover;
+      //position:relative;
+
+      img{
+        width:100%;
+      }
+    }
+  }
+
+  .navPre{
+    background-image: url("../../images/arrowCarouselLeft.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(170, 133, 185);
+    width: 90px;
+    height: 89px;
+    position: absolute;
+    left: 0px;
+    top: 44%;
+  }
+
+  .navNext{
+    background-image: url("../../images/arrowCarouselRight.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(170, 133, 185);
+    width: 90px;
+    height: 89px;
+    position: absolute;
+    right: 0px;
+    top: 44%;
+  }
+}
+
+.work {
+  .work-reel {
+    width: 100%;
+
+    video{
+      width: 100%;
+    }
+  }
+}
+/*********************************************************************/
+/**/
+/** DESKTOP MEDIA QUERIES **/
+/**/
+/*********************************************************************/
+/* Large screens ----------- */
+@media only screen and (max-width : 1824px) {
+  /* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (max-width : 1350px) {
+  /* Styles */
+  .more {
+    .work-carousel img{
+      width: 330px;
+      height: 267px;
+    }
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (max-width : 1224px) {
+  /* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (max-width : 1050px) {
+  /* Styles */
+  .more {
+    .work-carousel img{
+      width: 250px;
+      height: 202px;
+    }
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (max-width : 900px) {
+  /* Styles */
+
+  article {
+    &.work{
+      div.content{
+        .sectionsContainer {
+          width: 65%;
+        }
+
+        aside{
+          width: 35%;
+        }
+      }
+    }
+  }
+
+  .more {
+    .work-carousel img{
+      width: 210px;
+      height: 170px;
+    }
+  }
+}
+
+
+/*********************************************************************/
+/**/
+/** GENERIC SMARTPHONE MEDIA QUERIES **/
+/**/
+/*********************************************************************/
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  /* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+  /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+  /* Styles */
+}
+/*********************************************************************/
+/**/
+/** iPAD MEDIA QUERIES **/
+/**/
+/*********************************************************************/
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+  /* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {
+  /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+  /* Styles */
+}
+
+/* iPad 3 ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+  /* Styles */
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+  /* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (max-width : 768px) {
+  /* Styles */
+
+  article {
+    &.work{
+      padding-top: 7rem;
+
+      .hero-text{
+        font-size: 60px;
+        line-height: 60px;
+      }
+
+
+      .hero-summary{
+        font-size: 17px;
+        line-height: 21.8px;
+      }
+
+      div.content{
+        padding-top: 3rem;
+        padding-bottom: 0px;
+        .sectionsContainer {
+          width: 100%;
+          font-size: 18px;
+        }
+
+        aside{
+          width: 100%;
+          padding-top: 2rem;
+          background-color: #F5F5F5;
+          padding-bottom: 35px;
+          border-top: 5px solid #E5E5E5;
+          border-bottom: 5px solid #E5E5E5;
+          margin-top: 25px;
+        }
+      }
+    }
+  }
+
+  .more {
+    .work-carousel img{
+      width: 175px;
+      height: 142px;
+    }
+
+    label {
+      font-size: 35px;
+      padding-top: 40px;
+    }
+
+    .down{
+      height: 20px;
+    }
+  }
+}
+
+/*********************************************************************/
+/**/
+/** iPHONE MEDIA QUERIES **/
+/**/
+/*********************************************************************/
+/* iPhone 4 ----------- */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  /* Styles */
+  article {
+    &.work{
+      padding-top: 5rem;
+      .hero-text{
+        font-size: 35px;
+        line-height: 35px;
+      }
+
+      div.content{
+        .sectionsContainer {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+
+        aside {
+          width: 100%;
+          padding-left: 1rem;
+          padding-top: 2rem;
+          background-color: #F5F5F5;
+          padding-bottom: 35px;
+          border-top: 5px solid #E5E5E5;
+          border-bottom: 5px solid #E5E5E5;
+          margin-top: 25px;
+        }
+      }
+    }
+  }
+
+  .more {
+    .work-carousel{
+      margin-bottom: 20px;
+    }
+
+    .work-carousel img{
+      display: none;
+    }
+
+    .work-carousel img:first-child{
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    label {
+      font-size: 25px;
+      padding-top: 40px;
+    }
+  }
+}
+
+/* iPhone 5 ----------- */
+@media only screen and (min-width: 320px) and (max-height: 568px){
+  /* Styles */
+}
+
+/* iPhone 6 ----------- */
+@media only screen and (min-width: 375px) and (max-height: 667px) {
+  /* Styles */
+}
+
+/* iPhone 6+ ----------- */
+@media only screen and (min-width: 414px) and (max-height: 736px) {
+  /* Styles */
+}
+
+/*********************************************************************/
+/**/
+/** SAMSUNG PHONE MEDIA QUERIES **/
+/**/
+/*********************************************************************/
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-width: 320px) and (max-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+
+@media only screen and (min-width: 320px) and (max-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-width: 320px) and (max-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+}
+
+@media only screen and (min-width: 320px) and (max-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+}
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-width: 360px) and (max-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+}
+
+@media only screen and (min-width: 360px) and (max-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+}

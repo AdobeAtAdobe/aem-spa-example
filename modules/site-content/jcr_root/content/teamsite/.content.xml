@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:allowedTemplates="[/apps/aaa/teamsite/templates/.*]"
+        cq:cloudserviceconfigs="[/etc/cloudservices/sitecatalyst/aaa-teamsite-analytics-config/teamsite-analytics-framework-config]"
+        cq:designPath="/etc/designs/teamsite"
+        cq:deviceIdentificationMode="client-side"
+        cq:template="/apps/aaa/teamsite/templates/homepage"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Team site"
+        sling:resourceType="aaa/teamsite/pages/page"
+        angularSiteHomePath="/content/teamsite"
+        pageTitle="AdobeAtAdobe"/>
+    <about/>
+    <contact/>
+    <explore/>
+    <ideas/>
+    <work/>
+</jcr:root>

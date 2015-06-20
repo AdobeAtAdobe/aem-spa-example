@@ -1,0 +1,10 @@
+<div data-sly-use.work="apps.aaa.teamsite.components.ReferencedWorkPage" data-sly-unwrap>
+    <section class="project-explore-element" data-blurb-text="${work.heroText || 'No hero text defined'}" data-work-page="${properties.workPage}">
+        <div class="video-overlay-grid"></div>
+        <div data-sly-test="${!properties.videoPath || !properties.workPage}" class="content-needed">
+            Configure work page and video to display<br/>
+        </div>
+        <div data-sly-resource="${resource.path @ resourceType='aaa/teamsite/components/video'}" data-sly-unwrap></div>
+
+    </section>
+</div>

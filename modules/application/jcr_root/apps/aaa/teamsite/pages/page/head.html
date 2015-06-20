@@ -1,0 +1,33 @@
+<!--/*
+
+  ADOBE CONFIDENTIAL
+  __________________
+
+   Copyright 2014 Adobe Systems Incorporated
+   All Rights Reserved.
+
+  NOTICE:  All information contained herein is, and remains
+  the property of Adobe Systems Incorporated and its suppliers,
+  if any.  The intellectual and technical concepts contained
+  herein are proprietary to Adobe Systems Incorporated and its
+  suppliers and are protected by trade secret or copyright law.
+  Dissemination of this information or reproduction of this material
+  is strictly forbidden unless prior written permission is obtained
+  from Adobe Systems Incorporated.
+
+  Renders the head markup of a sightly page
+*/-->
+<script src="//use.typekit.net/jqr3pfj.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"
+      data-sly-use.head="head.js"
+      data-sly-use.headlibRenderer="headlibs.html"
+      data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}">
+<meta name="keywords" content="${head.keywords}">
+<meta name="description" content="${head.description}">
+<sly data-sly-include="author.html" />
+<sly data-sly-include="/libs/cq/cloudserviceconfigs/components/servicelibs/servicelibs.jsp" />
+<sly data-sly-include="customheaderlibs.html" />
+<link data-sly-test="${head.faviconPath}" rel="icon" type="image/vnd.microsoft.icon" href="${head.faviconPath}">
+<link data-sly-test="${head.faviconPath}" rel="shortcut icon" type="image/vnd.microsoft.icon" href="${head.faviconPath}">
+<title>${head.title}</title>

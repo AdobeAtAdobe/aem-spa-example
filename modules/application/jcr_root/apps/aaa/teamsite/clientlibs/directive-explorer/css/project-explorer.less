@@ -1,0 +1,39 @@
+@import "/etc/designs/teamsite/variables.less";
+@import "/etc/designs/teamsite/elements.less";
+
+
+.blurb-element {
+
+  cursor:pointer;
+  border-radius:50%;
+  position:absolute;
+
+  bottom:10px;
+  right:50px;
+
+  height:320px;
+  width:320px;
+
+  transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+
+  background:rgba(171,134,185,0.5);
+
+  overflow:hidden;
+
+  .blurb-inner-div,
+  .blurb-shadow-div{
+    position:absolute;
+    margin: 20px 0;
+
+    .blurb-text{
+      line-height:45px;
+      font-size:30px;
+      font-weight:300;
+    }
+
+  }
+}

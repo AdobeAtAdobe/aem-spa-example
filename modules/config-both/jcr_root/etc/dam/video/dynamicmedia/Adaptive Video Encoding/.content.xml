@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    avsEnabled="false"
+    description="Best practice encoding profiles for adaptive streaming to desktop, mobile and tablet. Can be used for any aspect ratio video."
+    name="Adaptive Video Encoding">
+    <MP4_x0020_-_x0020_0x1080_x0020_px_x002c__x0020_4500_x0020_kbps
+        jcr:primaryType="nt:unstructured"
+        audioBitrate="64"
+        audioBitrateCustom="false"
+        audioCodec="Dolby AAC-LC"
+        height="1080"
+        keepAspectRatio="true"
+        videoBitrate="4500"
+        videoCodec="MP4 H264 (.mp4)"
+        width="0"/>
+    <MP4_x0020_-_x0020_0x1080_x0020_px_x002c__x0020_800_x0020_kbps
+        jcr:primaryType="nt:unstructured"
+        audioBitrate="64"
+        audioBitrateCustom="false"
+        audioCodec="Dolby AAC-LC"
+        height="1080"
+        keepAspectRatio="true"
+        videoBitrate="800"
+        videoCodec="MP4 H264 (.mp4)"
+        width="0"/>
+    <MP4_x0020_-_x0020_0x720_x0020_px_x002c__x0020_4500_x0020_kbps
+        jcr:primaryType="nt:unstructured"
+        audioBitrate="64"
+        audioBitrateCustom="false"
+        audioCodec="Dolby AAC-LC"
+        height="720"
+        keepAspectRatio="true"
+        videoBitrate="4500"
+        videoCodec="MP4 H264 (.mp4)"
+        width="0"/>
+    <MP4_x0020_-_x0020_0x720_x0020_px_x002c__x0020_800_x0020_kbps
+        jcr:primaryType="nt:unstructured"
+        audioBitrate="64"
+        audioBitrateCustom="false"
+        audioCodec="Dolby AAC-LC"
+        height="720"
+        keepAspectRatio="true"
+        videoBitrate="800"
+        videoCodec="MP4 H264 (.mp4)"
+        width="0"/>
+    <MP4_x0020_-_x0020_0x480_x0020_px_x002c__x0020_4500_x0020_kbps
+        jcr:primaryType="nt:unstructured"
+        audioBitrate="64"
+        audioBitrateCustom="false"
+        audioCodec="Dolby AAC-LC"
+        height="480"
+        keepAspectRatio="true"
+        videoBitrate="4500"
+        videoCodec="MP4 H264 (.mp4)"
+        width="0"/>
+    <MP4_x0020_-_x0020_0x480_x0020_px_x002c__x0020_800_x0020_kbps
+        jcr:primaryType="nt:unstructured"
+        audioBitrate="64"
+        audioBitrateCustom="false"
+        audioCodec="Dolby AAC-LC"
+        height="480"
+        keepAspectRatio="true"
+        videoBitrate="800"
+        videoCodec="MP4 H264 (.mp4)"
+        width="0"/>
+    <MP4_x0020_-_x0020_0x352_x0020_px_x002c__x0020_4500_x0020_kbps
+        jcr:primaryType="nt:unstructured"
+        audioBitrate="64"
+        audioBitrateCustom="false"
+        audioCodec="Dolby AAC-LC"
+        height="352"
+        keepAspectRatio="true"
+        videoBitrate="4500"
+        videoCodec="MP4 H264 (.mp4)"
+        width="0"/>
+    <MP4_x0020_-_x0020_0x352_x0020_px_x002c__x0020_800_x0020_kbps
+        jcr:primaryType="nt:unstructured"
+        audioBitrate="64"
+        audioBitrateCustom="false"
+        audioCodec="Dolby AAC-LC"
+        height="352"
+        keepAspectRatio="true"
+        videoBitrate="800"
+        videoCodec="MP4 H264 (.mp4)"
+        width="0"/>
+    <MP4_x0020_-_x0020_0x576_x0020_px_x002c__x0020_4500_x0020_kbps
+        jcr:primaryType="nt:unstructured"
+        audioBitrate="64"
+        audioBitrateCustom="false"
+        audioCodec="Dolby AAC-LC"
+        height="576"
+        keepAspectRatio="true"
+        videoBitrate="4500"
+        videoCodec="MP4 H264 (.mp4)"
+        width="0"/>
+    <MP4_x0020_-_x0020_0x576_x0020_px_x002c__x0020_800_x0020_kbps
+        jcr:primaryType="nt:unstructured"
+        audioBitrate="64"
+        audioBitrateCustom="false"
+        audioCodec="Dolby AAC-LC"
+        height="576"
+        keepAspectRatio="true"
+        videoBitrate="800"
+        videoCodec="MP4 H264 (.mp4)"
+        width="0"/>
+    <MP4_x0020_-_x0020_0x234_x0020_px_x002c__x0020_800_x0020_kbps
+        jcr:primaryType="nt:unstructured"
+        audioBitrate="64"
+        audioBitrateCustom="false"
+        audioCodec="Dolby AAC-LC"
+        height="234"
+        keepAspectRatio="true"
+        videoBitrate="800"
+        videoCodec="MP4 H264 (.mp4)"
+        width="0"/>
+    <MP4_x0020_-_x0020_0x234_x0020_px_x002c__x0020_4500_x0020_kbps
+        jcr:primaryType="nt:unstructured"
+        audioBitrate="64"
+        audioBitrateCustom="false"
+        audioCodec="Dolby AAC-LC"
+        height="234"
+        keepAspectRatio="true"
+        videoBitrate="4500"
+        videoCodec="MP4 H264 (.mp4)"
+        width="0"/>
+    <MP4_x0020_-_x0020_0x144_x0020_px_x002c__x0020_800_x0020_kbps
+        jcr:primaryType="nt:unstructured"
+        audioBitrate="64"
+        audioBitrateCustom="false"
+        audioCodec="Dolby AAC-LC"
+        height="144"
+        keepAspectRatio="true"
+        videoBitrate="800"
+        videoCodec="MP4 H264 (.mp4)"
+        width="0"/>
+    <MP4_x0020_-_x0020_0x288_x0020_px_x002c__x0020_800_x0020_kbps
+        jcr:primaryType="nt:unstructured"
+        audioBitrate="64"
+        audioBitrateCustom="false"
+        audioCodec="Dolby AAC-LC"
+        height="288"
+        keepAspectRatio="true"
+        videoBitrate="800"
+        videoCodec="MP4 H264 (.mp4)"
+        width="0"/>
+    <MP4_x0020_-_x0020_0x432_x0020_px_x002c__x0020_800_x0020_kbps
+        jcr:primaryType="nt:unstructured"
+        audioBitrate="64"
+        audioBitrateCustom="false"
+        audioCodec="Dolby AAC-LC"
+        height="432"
+        keepAspectRatio="true"
+        videoBitrate="800"
+        videoCodec="MP4 H264 (.mp4)"
+        width="0"/>
+    <WebM_x0020_-_x0020_0x1080_x0020_px_x002c__x0020_4500_x0020_kbps
+        jcr:primaryType="nt:unstructured"
+        audioBitrate="64"
+        audioBitrateCustom="false"
+        audioCodec="Vorbis"
+        height="1080"
+        keepAspectRatio="true"
+        videoBitrate="4500"
+        videoCodec="WebM VP8 (.webm)"
+        width="0"/>
+    <WebM_x0020_-_x0020_0x1080_x0020_px_x002c__x0020_800_x0020_kbps
+        jcr:primaryType="nt:unstructured"
+        audioBitrate="64"
+        audioBitrateCustom="false"
+        audioCodec="Vorbis"
+        height="1080"
+        keepAspectRatio="true"
+        videoBitrate="800"
+        videoCodec="WebM VP8 (.webm)"
+        width="0"/>
+    <WebM_x0020_-_x0020_0x720_x0020_px_x002c__x0020_4500_x0020_kbps
+        jcr:primaryType="nt:unstructured"
+        audioBitrate="64"
+        audioBitrateCustom="false"
+        audioCodec="Vorbis"
+        height="720"
+        keepAspectRatio="true"
+        videoBitrate="4500"
+        videoCodec="WebM VP8 (.webm)"
+        width="0"/>
+    <WebM_x0020_-_x0020_0x720_x0020_px_x002c__x0020_800_x0020_kbps
+        jcr:primaryType="nt:unstructured"
+        audioBitrate="64"
+        audioBitrateCustom="false"
+        audioCodec="Vorbis"
+        height="720"
+        keepAspectRatio="true"
+        videoBitrate="800"
+        videoCodec="WebM VP8 (.webm)"
+        width="0"/>
+    <WebM_x0020_-_x0020_0x480_x0020_px_x002c__x0020_4500_x0020_kbps
+        jcr:primaryType="nt:unstructured"
+        audioBitrate="64"
+        audioBitrateCustom="false"
+        audioCodec="Vorbis"
+        height="480"
+        keepAspectRatio="true"
+        videoBitrate="4500"
+        videoCodec="WebM VP8 (.webm)"
+        width="0"/>
+    <WebM_x0020_-_x0020_0x480_x0020_px_x002c__x0020_800_x0020_kbps
+        jcr:primaryType="nt:unstructured"
+        audioBitrate="64"
+        audioBitrateCustom="false"
+        audioCodec="Vorbis"
+        height="480"
+        keepAspectRatio="true"
+        videoBitrate="800"
+        videoCodec="WebM VP8 (.webm)"
+        width="0"/>
+    <WebM_x0020_-_x0020_0x352_x0020_px_x002c__x0020_800_x0020_kbps
+        jcr:primaryType="nt:unstructured"
+        audioBitrate="64"
+        audioBitrateCustom="false"
+        audioCodec="Vorbis"
+        height="352"
+        keepAspectRatio="true"
+        videoBitrate="800"
+        videoCodec="WebM VP8 (.webm)"
+        width="0"/>
+    <WebM_x0020_-_x0020_0x576_x0020_px_x002c__x0020_800_x0020_kbps
+        jcr:primaryType="nt:unstructured"
+        audioBitrate="64"
+        audioBitrateCustom="false"
+        audioCodec="Vorbis"
+        height="576"
+        keepAspectRatio="true"
+        videoBitrate="800"
+        videoCodec="WebM VP8 (.webm)"
+        width="0"/>
+    <WebM_x0020_-_x0020_0x576_x0020_px_x002c__x0020_4500_x0020_kbps
+        jcr:primaryType="nt:unstructured"
+        audioBitrate="64"
+        audioBitrateCustom="false"
+        audioCodec="Vorbis"
+        height="576"
+        keepAspectRatio="true"
+        videoBitrate="4500"
+        videoCodec="WebM VP8 (.webm)"
+        width="0"/>
+    <WebM_x0020_-_x0020_0x234_x0020_px_x002c__x0020_800_x0020_kbps
+        jcr:primaryType="nt:unstructured"
+        audioBitrate="64"
+        audioBitrateCustom="false"
+        audioCodec="Vorbis"
+        height="234"
+        keepAspectRatio="true"
+        videoBitrate="800"
+        videoCodec="WebM VP8 (.webm)"
+        width="0"/>
+    <WebM_x0020_-_x0020_0x144_x0020_px_x002c__x0020_800_x0020_kbps
+        jcr:primaryType="nt:unstructured"
+        audioBitrate="64"
+        audioBitrateCustom="false"
+        audioCodec="Vorbis"
+        height="144"
+        keepAspectRatio="true"
+        videoBitrate="800"
+        videoCodec="WebM VP8 (.webm)"
+        width="0"/>
+    <WebM_x0020_-_x0020_0x288_x0020_px_x002c__x0020_800_x0020_kbps
+        jcr:primaryType="nt:unstructured"
+        audioBitrate="64"
+        audioBitrateCustom="false"
+        audioCodec="Vorbis"
+        height="288"
+        keepAspectRatio="true"
+        videoBitrate="800"
+        videoCodec="WebM VP8 (.webm)"
+        width="0"/>
+    <WebM_x0020_-_x0020_0x432_x0020_px_x002c__x0020_800_x0020_kbps
+        jcr:primaryType="nt:unstructured"
+        audioBitrate="64"
+        audioBitrateCustom="false"
+        audioCodec="Vorbis"
+        height="432"
+        keepAspectRatio="true"
+        videoBitrate="800"
+        videoCodec="WebM VP8 (.webm)"
+        width="0"/>
+</jcr:root>

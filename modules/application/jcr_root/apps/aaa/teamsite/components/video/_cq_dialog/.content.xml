@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Video"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <video
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Video"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                    margin="{Boolean}false"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <loop
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                title="Loop the video"
+                                text="Loop the video"
+                                fieldDescription="Loop the video when checked"
+                                name="./loopVideo"
+                                value="true"/>
+                            <autoplay
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                title="Autoplay"
+                                text="Autoplay"
+                                fieldDescription="Autoplay video when checked"
+                                name="./autoplay"
+                                value="true"/>
+                            <show-controls
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                title="Show controls"
+                                text="Show controls"
+                                fieldDescription="Show the video controls"
+                                name="./showControls"
+                                value="true"/>
+                            <!--<center-play
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                title="Center play button"
+                                text="Center play button"
+                                fieldDescription="Center play button in the video window"
+                                name="./centerPlayButton"
+                                value="{Boolean}false"/>-->
+                            <poster-image
+                                fieldLabel="Poster image"
+                                fieldDescription="Select poster image to display"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                name="./posterImage"
+                                rootPath="/content/dam"/>
+                            <video
+                                fieldLabel="Video to play"
+                                fieldDescription="Select video to play"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                name="./videoPath"
+                                rootPath="/content/dam"/>
+                            <waypoint-start
+                                title="Start playing when in view"
+                                text="Start playing when in view"
+                                fieldDescription="Start playing when the bottom of the video comes into view"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./waypointVideoStart"
+                                value="true"/>
+                            <waypoint-end
+                                title="Stop playing when video out of view"
+                                text="Stop playing when video out of view"
+                                fieldDescription="Stop playing when bottom of the video goes out of view"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./waypointVideoStop"
+                                value="true"/>
+                        </items>
+                    </column>
+                </items>
+            </video>
+        </items>
+    </content>
+</jcr:root>

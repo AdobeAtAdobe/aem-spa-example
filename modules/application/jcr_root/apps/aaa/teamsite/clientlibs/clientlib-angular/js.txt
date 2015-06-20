@@ -1,0 +1,5 @@
+#base=js
+
+angular.js
+angular-messages.js
+angular-animate.js

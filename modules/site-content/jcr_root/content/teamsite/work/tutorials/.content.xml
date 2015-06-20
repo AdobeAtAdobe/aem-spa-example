@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2015-05-28T13:03:25.012-07:00"
+        cq:lastModifiedBy="admin"
+        jcr:lastModified="{Date}2015-05-28T13:03:24.869-07:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="CC Tutorials"
+        sling:resourceType="aaa/teamsite/pages/work"
+        pageTitle="CC Tutorials">
+        <hero-text
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="aaa/teamsite/components/work/hero_text"
+            text="CC Tutorials"/>
+        <hero-summary
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="aaa/teamsite/components/work/hero_text"
+            text="On the legs of Adobe Experience Manager and Digital Publishing suite, its a winner, and oh... its only the beginning :)"/>
+        <hero-carousel
+            jcr:lastModified="{Date}2015-03-25T13:07:08.331-07:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="aaa/teamsite/components/work/hero_carousel"
+            pages="[/content/dam/temp-teamsite/work/cc-tutorials/CCTuts_1_1280.png,/content/dam/temp-teamsite/work/cc-tutorials/CCTuts_2_1280.png,/content/dam/temp-teamsite/work/cc-tutorials/CCTuts_3_1280.png]"
+            playSpeed="6"/>
+        <sections-container
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <section-no-title
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aaa/teamsite/components/work/section_no_title">
+                <par-content
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                    <text
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aaa/teamsite/components/work/text"
+                        text="Learning how to master the Adobe Creative Cloud applications has never been easier. Adobe Creative Cloud tutorials brings hundreds of hours of training for all levels into an easy to use iOS mobile app that works across iPhones and iPads. Make use of that time in line at the grocery or market to get up to speed on the latest features of Photoshop, Illustrator or any of the other Creative Cloud applications.  Built to showcase Adobe Primetime video player, Adobe@Adobe Sr. Computer Scientist Dylan DePass worked with Sr Experience Architect Jamie Godin to deliver a delightful experience to find and consume video content from Adobe."/>
+                </par-content>
+            </section-no-title>
+            <section-with-title
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aaa/teamsite/components/work/section_with_title">
+                <title
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aaa/teamsite/components/work/text"
+                    text="Paragraph title"/>
+                <par-content
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/parsys">
+                    <text
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="aaa/teamsite/components/work/text"
+                        text="Adobe Primetime brings TV to every IP-connected screen. Essentially Adobe Primetime enables content producers and distributors like cable operators to deliver access to their content. The Adobe Primetime product team offers it’s customers a software development kit to help them integrate Adobe Primetime into their web sites and mobile apps. We provided the Adobe Primetime product team the full featured video player we built for CC Tutorials for them to share with customers. "/>
+                </par-content>
+            </section-with-title>
+        </sections-container>
+        <project-info
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="aaa/teamsite/components/work/project_info">
+            <name
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aaa/teamsite/components/work/text"
+                text="CMO"/>
+            <description
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aaa/teamsite/components/work/text"
+                text="Mobile friendly app, build for iOS and Android (coming)"/>
+            <year
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aaa/teamsite/components/work/text"
+                text="2014"/>
+            <categories
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="aaa/teamsite/components/work/text"
+                text="Digital Publishing Suite"/>
+        </project-info>
+        <more
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="aaa/teamsite/components/work/more">
+            <more-work
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/parsys">
+                <more_work_thumbnail_
+                    jcr:created="{Date}2015-03-25T13:07:33.881-07:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2015-03-25T13:11:26.424-07:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aaa/teamsite/components/work/more_work_thumbnail_renderer"
+                    workPage="/content/teamsite/work/cmo"/>
+                <more_work_thumbnail__845668780
+                    jcr:created="{Date}2015-03-25T13:11:36.314-07:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2015-03-25T13:11:46.114-07:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aaa/teamsite/components/work/more_work_thumbnail_renderer"
+                    workPage="/content/teamsite/work/communities"/>
+            </more-work>
+        </more>
+        <image
+            jcr:lastModified="{Date}2015-05-28T13:03:24.869-07:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            fileName="CCTuts_1_408.png">
+            <file/>
+        </image>
+    </jcr:content>
+</jcr:root>

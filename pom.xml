@@ -1,0 +1,41 @@
+<?xml version="1.0"?><!--
+  Copyright 1997-2009 Day Management AG
+  Barfuesserplatz 6, 4001 Basel, Switzerland
+  All Rights Reserved.
+
+  This software is the confidential and proprietary information of
+  Day Management AG, ("Confidential Information"). You shall not
+  disclose such Confidential Information and shall use it only in
+  accordance with the terms osenf the license agreement you entered into
+  with Day.
+ -->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- ======================================================================= -->
+    <!-- P R O J E C T                                                           -->
+    <!-- ======================================================================= -->
+    <groupId>com.adobe.aaa</groupId>
+    <artifactId>teamsite-reactor</artifactId>
+    <version>1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>Teamsite Reactor</name>
+    <description>Teamsite Reactor</description>
+    <inceptionYear>2015</inceptionYear>
+
+    <!-- ======================================================================= -->
+    <!-- M O D U L E S                                                           -->
+    <!-- ======================================================================= -->
+    <modules>
+        <module>parent</module>
+        <module>modules/config-both</module>
+        <module>modules/config-author</module>
+        <module>modules/config-publish</module>
+        <module>modules/application</module>
+        <module>modules/site-content</module>
+    </modules>
+
+</project>

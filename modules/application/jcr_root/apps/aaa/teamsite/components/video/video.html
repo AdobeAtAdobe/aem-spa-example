@@ -1,0 +1,16 @@
+<div data-sly-use.videoComponent="apps.aaa.teamsite.components.video.VideoComponent" data-sly-unwrap>
+    <video preload="auto" select-best-rendition class="videoplayer video-js vjs-default-skin vjs-big-play-centered"
+           data-sly-attribute.autoplay="${videoComponent.autoPlay}"
+           data-sly-attribute.loop="${videoComponent.loopVideo}"
+           data-sly-attribute.controls="${videoComponent.showControls}"
+           data-sly-attribute.poster="${videoComponent.posterImage}"
+           data-sly-attribute.data-videowaypointsstartwheninview="${videoComponent.waypointStartWhenInView}"
+           data-sly-attribute.data-videowaypointsstopwhenoutofview="${videoComponent.waypointStopWhenOutOfView}"
+           data-sly-attribute.data-hasDmAvsSet="${videoComponent.hasAvsSet}">
+            <!-- TODO:// add in tracking-->
+            <div data-sly-list.vsrc="${videoComponent.videoSourceOutputs}" data-sly-unwrap>
+                ${vsrc @ context='unsafe'}
+            </div>
+        <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+    </video>
+</div>

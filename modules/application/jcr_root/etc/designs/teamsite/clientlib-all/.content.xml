@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:mixinTypes="[mix:lockable]"
+    jcr:primaryType="cq:ClientLibraryFolder"
+    categories="[apps.teamsite.design]"
+    dependencies="[]"
+    embed="[cq.jquery,jquery,
+    granite.utils,
+    granite.jquery,
+    granite.shared,
+    cq.shared,
+    cq.foundation,
+    lib.angular-1.3.0,
+    lib.angular-ui-router,
+    lib.enquire,
+    lib.angular-touch,
+    lib.angular-carousel,
+    lib.requestAnimationFrame,
+    cq.adaptiveimage,
+    lib.mod-touchswipe,
+    browsermap.standard,
+    apps.teamsite.ngapp,
+    apps.teamsite.component,
+    apps.teamsite.angular.directive,
+    app.teamsite.angular.controller]"/>

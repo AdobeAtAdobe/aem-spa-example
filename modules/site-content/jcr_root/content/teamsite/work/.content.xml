@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2015-05-29T11:56:20.113-07:00"
+        cq:lastModifiedBy="admin"
+        jcr:lastModified="{Date}2015-05-28T12:23:36.317-07:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Our Work"
+        sling:resourceType="aaa/teamsite/pages/work_listing"
+        pageTitle="Our Work">
+        <work-reel
+            jcr:lastModified="{Date}2015-05-29T11:56:20.109-07:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="aaa/teamsite/components/video"
+            autoplay="true"
+            loopVideo="true"
+            posterImage="/content/dam/temp-teamsite/work/workreel_poster.png"
+            videoPath="/content/dam/temp-teamsite/work/work_reel.mp4"
+            waypointVideoStart="true"
+            waypointVideoStop="true"/>
+        <more-work-grid
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="aaa/teamsite/components/work/more_work_grid"/>
+        <image
+            jcr:lastModified="{Date}2015-05-28T12:23:36.317-07:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            fileName="CMO_1_408.png">
+            <file/>
+        </image>
+    </jcr:content>
+    <cmo/>
+    <communities/>
+    <tutorials/>
+</jcr:root>

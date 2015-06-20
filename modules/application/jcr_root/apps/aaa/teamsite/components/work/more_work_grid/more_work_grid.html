@@ -1,0 +1,8 @@
+<div class="more">
+    <label>More Work</label>
+    <div class="down"></div>
+
+    <div class="work-carousel" data-sly-list.child="${currentPage.listChildren}">
+        <div data-sly-resource="${child.path @ resourceType='aaa/teamsite/components/work/more_work_thumbnail_renderer'}" data-sly-unwrap></div>
+    </div>
+</div>

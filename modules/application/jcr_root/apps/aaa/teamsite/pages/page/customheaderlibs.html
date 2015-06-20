@@ -1,0 +1,31 @@
+<div data-sly-use.head="head.js"
+     data-sly-use.teamsitePage="TeamsitePage"
+     data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}"
+     data-sly-unwrap>
+    <link rel="canonical" href="${head.pagePath}"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta name="publisher" content="${teamsitePage.isPublisher}"/>
+    <meta name="wcmmode" content="${teamsitePage.metaWcmMode}">
+
+    <!--<meta property="fb:app_id" content="TBD">-->
+    <!--<meta property="fb:admins" content="APP_ADMIN">-->
+    <meta property="og:title" content="${head.title}" id="ogTitle">
+    <meta property="og:description" content="${head.description}" id="ogDescription">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="${request.requestURI}" id="ogUrl">
+    <meta property="og:image" content="OUR SITE LOGO">
+    <meta property="og:site_name" content="AdobeAtAdobe - Love what you do">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@AdobeAtAdobe">
+    <meta name="twitter:title" content="${head.title}" id="twitterTitle">
+    <meta name="twitter:description" content="${head.description}" id="twitterDescription">
+    <!--<meta name="twitter:image:src" content="/io2015/images/io15-color.png">-->
+
+    <meta name="deviceGroup" content="undefined">
+
+    <css data-sly-call="${clientLib.css @ categories=['apps.teamsite.design']}" data-sly-unwrap/>
+    <!--<meta data-sly-include="/libs/wcm/core/browsermap/browsermap.jsp" data-sly-unwrap></meta>-->
+    <base href="/" />
+    <!--<meta name="fragment" content="!">-->
+</div>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/aaa/teamsite"/>
+    <filter root="/etc/designs/teamsite" />
+    <filter root="/etc/clientcontext/teamsite"/>
+    <filter root="/etc/tags/teamsite" mode="merge"/>
+    <filter root="/etc/segmentation/teamsite"/>
+    <filter root="/apps/dam/ingestion/processingprofiles/aaa-teamsite-processing-profile" mode="update"/>
+</workspaceFilter>

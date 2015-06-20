@@ -1,0 +1,78 @@
+@import "/etc/designs/teamsite/variables";
+@import "/etc/designs/teamsite/elements";
+
+.contact-block {
+    height: 590px;
+    background-color: rgba(34, 34, 34, 0.9);
+    font-family: 'Adobe Clean';
+    
+    .hi {
+        color:  #fff;
+        font-size: 70px;
+        font-weight: 700;
+        line-height: 66.5px;
+        text-align: center;
+        max-width: 446px;
+        margin: 0 auto;
+        padding-top: 144px;
+        margin-bottom: 75px;
+
+        span {
+            color:  #aa85b8;
+            font-weight: 400;
+        }
+    }
+    
+    .methods {
+        text-align: center;
+        width: 100%;
+
+        .method {
+            display: inline-block; 
+            padding-left: 30px;
+            padding-right: 30px;
+            color:  #ffffff;
+            font-size: 25px;
+            text-align: center;
+
+            &:first-child {
+                border-right: 1px solid #888888;
+            }
+
+            &:last-child {
+                border-left: 1px solid #888888;
+            }
+
+            .title {
+                font-weight: 400;
+                line-height: 30px;
+            }
+
+            .phone {
+                font-weight: 300;
+                line-height: 30px;
+            }
+
+            .email {
+                color:  #aa85b9;
+                font-weight: 300;
+                line-height: 30px;
+            }
+        }
+    }
+}
+
+.contact-social {
+    height: 246px;
+    
+    .social-icons{
+        margin: 0 auto;
+        width: 200px;
+        padding-top: 85px; 
+        
+        .img{
+            width: 63px;
+            height: 63px;
+        }
+    }
+}
