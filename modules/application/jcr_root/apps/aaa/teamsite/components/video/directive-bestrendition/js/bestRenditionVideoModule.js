@@ -1,24 +1,8 @@
-/*
- *
- * ADOBE CONFIDENTIAL
- * __________________
- *
- *  Copyright 2013 Adobe Systems Incorporated
- *  All Rights Reserved.
- *
- * NOTICE:  All information contained herein is, and remains
- * the property of Adobe Systems Incorporated and its suppliers,
- * if any.  The intellectual and technical concepts contained
- * herein are proprietary to Adobe Systems Incorporated and its
- * suppliers and are protected by trade secret or copyright law.
- * Dissemination of this information or reproduction of this material
- * is strictly forbidden unless prior written permission is obtained
- * from Adobe Systems Incorporated.
- */
 angular.module('bestRenditionVideoModule',[])
     .directive('selectBestRendition', function ($location,$log) {
       return {
         restrict: 'A', //E = element, A = attribute, C = class, M = comment
+        scope: true,
         link: function ($scope, element, attrs) {
 
             //BrowserMap
@@ -28,17 +12,19 @@ angular.module('bestRenditionVideoModule',[])
                 BrowserMap.matchDeviceGroups();
             }
 
-            $scope.videoSource = {};
-            loadVideoSourceData();
-            testGroupsWidth();
-            enableVideoSource();
+            /*************
+             * Get the clients country info
+             */
+            function getClientCountryInfo(){
+                //TODO https://freegeoip.net/json/
+                $scope.clientCountryInfo = {};
+            }
 
             /*************
-             * Get all the video source tags
-             *  Ignores all videos without the type="avs"
+             * Get all the videosource tags
              */
             function getAllVideoSourceData() {
-                var videoSource = element.find("source[type='sbr']");
+                var videoSource = element.find("videosource");
 
                 return videoSource;
             }
@@ -87,6 +73,11 @@ angular.module('bestRenditionVideoModule',[])
                     }
                 });
             }
+
+            $scope.videoSource = {};
+            loadVideoSourceData();
+            testGroupsWidth();
+            enableVideoSource();
 
             function enableVideoSource(){
                 var matchedDeviceGroups = BrowserMap.getMatchedDeviceGroups();

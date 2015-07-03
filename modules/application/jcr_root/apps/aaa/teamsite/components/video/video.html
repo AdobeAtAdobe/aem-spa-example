@@ -1,5 +1,5 @@
 <div data-sly-use.videoComponent="apps.aaa.teamsite.components.video.VideoComponent" data-sly-unwrap>
-    <video preload="auto" select-best-rendition class="videoplayer video-js vjs-default-skin vjs-big-play-centered"
+    <video preload="auto" class="videoplayer video-js vjs-default-skin vjs-big-play-centered"
            data-sly-attribute.autoplay="${videoComponent.autoPlay}"
            data-sly-attribute.loop="${videoComponent.loopVideo}"
            data-sly-attribute.controls="${videoComponent.showControls}"
@@ -7,10 +7,19 @@
            data-sly-attribute.data-videowaypointsstartwheninview="${videoComponent.waypointStartWhenInView}"
            data-sly-attribute.data-videowaypointsstopwhenoutofview="${videoComponent.waypointStopWhenOutOfView}"
            data-sly-attribute.data-hasDmAvsSet="${videoComponent.hasAvsSet}">
-            <!-- TODO:// add in tracking-->
-            <div data-sly-list.vsrc="${videoComponent.videoSourceOutputs}" data-sly-unwrap>
-                ${vsrc @ context='unsafe'}
-            </div>
+           <!-- TODO:// add in tracking-->
+
+            <endpoint baseurl="http://mytest.com">
+            </endpoint>
+
+            <videosource src="movie1_1024_6.mp4" srctype="video/mp4" data-width="1024" data-videobitrate="6000" data-srctype="video/mp4"/>
+            <videosource src="movie_1024_1.mp4" srctype="video/mp4" data-width="1024" data-videobitrate="1000" data-srctype="video/mp4"/>
+            <videosource src="movie_360_6.mp4" srctype="video/mp4" data-width="360" data-videobitrate="6000" data-srctype="video/mp4"/>
+            <videosource src="movie_360_1.mp4" srctype="video/mp4" data-width="360" data-videobitrate="1000" data-srctype="video/mp4"/>
+            <videosource src="movie_1024_6.ogg" srctype="video/ogg" data-width="1024" data-videobitrate="6000" data-srctype="video/ogg"/>
+            <videosource src="movie_1024_1.ogg" srctype="video/ogg" data-width="1024" data-videobitrate="1000" data-srctype="video/ogg"/>
+            <videosource src="movie_360_6.ogg" srctype="video/ogg" data-width="360" data-videobitrate="6000" data-srctype="video/ogg"/>
+
         <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
     </video>
 </div>

@@ -15,7 +15,7 @@
  * is strictly forbidden unless prior written permission is obtained
  * from Adobe Systems Incorporated.
  */
-var teamSite = angular.module('appAAA', ['angular-carousel','ui.router', 'Routing','videowaypointsModule', 'projectexplorerModule', 'bestRenditionVideoModule'])
+var teamSite = angular.module('appAAA', ['angular-carousel','ui.router', 'Routing','videowaypointsModule', 'projectexplorerModule'])
 	.run(function($rootScope,$log,$timeout,PageMetaData){
 
 		/****

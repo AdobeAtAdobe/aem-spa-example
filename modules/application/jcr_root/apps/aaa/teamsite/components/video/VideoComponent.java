@@ -1,4 +1,7 @@
 /*
+<div data-sly-list.vsrc="${videoComponent.videoSourceOutputs}" data-sly-unwrap>
+    ${vsrc @ context='unsafe'}
+</div>
 
 <source src="movie1_1024_6.mp4" srctype="video/mp4" type="sbr" data-width="1024" data-videobitrate="6000" data-srctype="video/mp4">
 <source src="movie_1024_1.mp4" srctype="video/mp4" type="sbr" data-width="1024" data-videobitrate="1000" data-srctype="video/mp4">
@@ -8,6 +11,28 @@
 <source src="movie_1024_1.ogg" srctype="video/ogg" type="sbr" data-width="1024" data-videobitrate="1000" data-srctype="video/ogg">
 <source src="movie_360_6.ogg" srctype="video/ogg" type="sbr" data-width="360" data-videobitrate="6000" data-srctype="video/ogg">
 <source src="movie_360_2.ogg" srctype="video/ogg" type="sbr" data-width="360" data-videobitrate="2000" data-srctype="video/ogg">
+
+new video tag content
+
+<endpoint baseurl="http://mytest.com">
+    <country code="fr"/>
+    <country code="us"/>
+</endpoint>
+
+<videosource src="movie1_1024_6.mp4" srctype="video/mp4" data-width="1024" data-videobitrate="6000" data-srctype="video/mp4"/>
+<videosource src="movie_1024_1.mp4" srctype="video/mp4" data-width="1024" data-videobitrate="1000" data-srctype="video/mp4"/>
+<videosource src="movie_360_6.mp4" srctype="video/mp4" data-width="360" data-videobitrate="6000" data-srctype="video/mp4"/>
+<videosource src="movie_360_1.mp4" srctype="video/mp4" data-width="360" data-videobitrate="1000" data-srctype="video/mp4"/>
+<videosource src="movie_1024_6.ogg" srctype="video/ogg" data-width="1024" data-videobitrate="6000" data-srctype="video/ogg"/>
+<videosource src="movie_1024_1.ogg" srctype="video/ogg" data-width="1024" data-videobitrate="1000" data-srctype="video/ogg"/>
+<videosource src="movie_360_6.ogg" srctype="video/ogg" data-width="360" data-videobitrate="6000" data-srctype="video/ogg"/>
+
+//TODO
+<videosource src="movie_360_2.ogg" srctype="video/ogg" type="sbr" data-width="360" data-videobitrate="2000" data-srctype="video/ogg">
+    <country code="fr"/>
+    <country code="us"/>
+</videosource>
+
 
  */
 package apps.aaa.teamsite.components.video;

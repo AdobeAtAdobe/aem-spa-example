@@ -1,4 +1,6 @@
 #base=js
 
-waypoints.js
 videoplayer.js
+waypoints.js
+endpoint-directive.js
+videosource-directive.js
