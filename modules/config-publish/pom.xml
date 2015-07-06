@@ -29,7 +29,7 @@
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
     <groupId>com.adobe.aaa</groupId>
-    <artifactId>CEC-config-publish</artifactId>
+    <artifactId>teamsite-config-publish</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>Team Site Configuration Publisher</name>
     <description>Team site config for publisher</description>

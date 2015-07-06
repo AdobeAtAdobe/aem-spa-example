@@ -29,7 +29,7 @@
     <!-- P R O J E C T  D E S C R I P T I O N                                   -->
     <!-- ====================================================================== -->
     <groupId>com.adobe.aaa</groupId>
-    <artifactId>CEC-content</artifactId>
+    <artifactId>teamsite-content</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>Team site Content</name>
     <description>Team site Default Content</description>
