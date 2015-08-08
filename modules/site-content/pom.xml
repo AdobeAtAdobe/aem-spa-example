@@ -69,6 +69,7 @@
             <plugin>
                 <groupId>com.day.jcr.vault</groupId>
                 <artifactId>content-package-maven-plugin</artifactId>
+                <version>0.0.24</version>
                 <extensions>true</extensions>
                 <configuration>
                     <group>AdobeAtAdobe</group>
@@ -91,6 +92,7 @@
                     <plugin>
                         <groupId>com.day.jcr.vault</groupId>
                         <artifactId>content-package-maven-plugin</artifactId>
+                        <version>0.0.24</version>
                         <executions>
                             <execution>
                                 <id>install-content-package</id>
@@ -117,6 +119,7 @@
                     <plugin>
                         <groupId>com.day.jcr.vault</groupId>
                         <artifactId>content-package-maven-plugin</artifactId>
+                        <version>0.0.24</version>
                         <executions>
                             <execution>
                                 <id>install-content-package-publish</id>
@@ -143,17 +146,6 @@
     <!-- ====================================================================== -->
     <reporting>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <configuration>
-                    <skip>true</skip>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-changelog-plugin</artifactId>
-            </plugin>
         </plugins>
     </reporting>
 
