@@ -10,7 +10,7 @@ Prerequisites
 1. sighlty support 
 2. 6.0 with mobile application support
 
-This has only been tested with 6.1 at this point. 
+This has only been tested with 6.1 at this point. Also all our components only support Touch UI.
 
 I will be adding a link to the slide share from the talk once its been posted.
 
