@@ -6,5 +6,11 @@ Its an proof of concept site done using a Single Page Application style on the A
 
 This is live code that is being on the AdobeAtAdobe External Teamsite to help refine the patten and improve the concept.
 
+Prerequisites
+1. sighlty support 
+2. 6.0 with mobile application support
+
+This has only been tested with 6.1 at this point. 
+
 I will be adding a link to the slide share from the talk once its been posted.
 
