@@ -85,136 +85,27 @@
 
     <repositories>
         <repository>
-            <id>central</id>
-            <url>http://nexus.bsl.eur.adobe.com/content/groups/development-repositories/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-
-        <repository>
-            <id>public</id>
-            <url>http://nexus.bsl.eur.adobe.com/content/groups/public/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-
-        <repository>
-            <id>cq release</id>
-            <url>http://nexus.bsl.eur.adobe.com/content/repositories/releases/</url>
-        </repository>
-
-        <repository>
-            <id>adobe-public-releases</id>
-            <name>Adobe Basel Public Repository</name>
-            <url>http://repo.adobe.com/nexus/content/groups/public</url>
-            <releases>
-                <enabled>true</enabled>
-                <updatePolicy>never</updatePolicy>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
+            <id>adobe</id>
+            <name>Adobe Public Repository</name>
+            <url>http://repo.adobe.com/nexus/content/groups/public/</url>
+            <layout>default</layout>
         </repository>
     </repositories>
 
     <pluginRepositories>
         <pluginRepository>
-            <id>central</id>
-            <url>http://nexus.bsl.eur.adobe.com/content/groups/development-repositories/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </pluginRepository>
-
-        <pluginRepository>
-            <id>adobe-public-releases</id>
-            <name>Adobe Basel Public Repository</name>
-            <url>http://repo.adobe.com/nexus/content/groups/public</url>
-            <releases>
-                <enabled>true</enabled>
-                <updatePolicy>never</updatePolicy>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
+            <id>adobe</id>
+            <name>Adobe Public Repository</name>
+            <url>http://repo.adobe.com/nexus/content/groups/public/</url>
+            <layout>default</layout>
         </pluginRepository>
     </pluginRepositories>
-
-    <!-- ====================================================================== -->
-    <!-- B U I L D                                                              -->
-    <!-- ====================================================================== -->
-    <build>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>com.adobe.cq</groupId>
-                    <artifactId>adobe-maven-tools</artifactId>
-                    <version>0.0.1-SNAPSHOT</version>
-                    <extensions>true</extensions>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.felix</groupId>
-                    <artifactId>maven-bundle-plugin</artifactId>
-                    <version>2.4.0</version>
-                    <extensions>true</extensions>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.felix</groupId>
-                    <artifactId>maven-scr-plugin</artifactId>
-                    <version>1.17.0</version>
-                    <extensions>true</extensions>
-                    <executions>
-                        <execution>
-                            <id>scr</id>
-                            <goals>
-                                <goal>scr</goal>
-                            </goals>
-                        </execution>
-                    </executions>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.sling</groupId>
-                    <artifactId>maven-sling-plugin</artifactId>
-                    <version>2.0.4-incubator</version>
-                    <extensions>true</extensions>
-                    <configuration>
-                        <usePut>true</usePut>
-                    </configuration>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <configuration>
-                        <source>1.6</source>
-                        <target>1.6</target>
-                    </configuration>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-changelog-plugin</artifactId>
-                    <version>2.2</version>
-                </plugin>
-            </plugins>
-        </pluginManagement>
-    </build>
 
     <!-- ====================================================================== -->
     <!-- D E P E N D E N C I E S                                                -->
     <!-- ====================================================================== -->
     <dependencyManagement>
         <dependencies>
-
             <!-- PROJECT SPECIFIC DEPENDENCIES -->
             <dependency>
                 <groupId>org.osgi</groupId>
@@ -261,7 +152,7 @@
             <dependency>
                 <groupId>com.day.cq</groupId>
                 <artifactId>cq-search</artifactId>
-                <version>5.8.22</version>
+                <version>5.6.4</version>
                 <scope>provided</scope>
             </dependency>
 
@@ -275,7 +166,7 @@
             <dependency>
                 <groupId>com.day.cq.wcm</groupId>
                 <artifactId>cq-wcm-commons</artifactId>
-                <version>5.8.10</version>
+                <version>5.6.4</version>
                 <scope>provided</scope>
             </dependency>
 
@@ -289,14 +180,14 @@
             <dependency>
                 <groupId>com.day.cq</groupId>
                 <artifactId>cq-tagging</artifactId>
-                <version>5.8.20</version>
+                <version>5.6.4</version>
                 <scope>provided</scope>
             </dependency>
 
             <dependency>
                 <groupId>com.day.cq.dam</groupId>
                 <artifactId>cq-dam-api</artifactId>
-                <version>5.8.26</version>
+                <version>5.6.6</version>
                 <scope>provided</scope>
             </dependency>
 
@@ -328,14 +219,13 @@
         <dependency>
             <groupId>org.apache.felix</groupId>
             <artifactId>org.apache.felix.scr.annotations</artifactId>
-            <version>1.9.0</version>
+            <version>1.9.6</version>
         </dependency>
 
         <dependency>
             <groupId>biz.aQute</groupId>
             <artifactId>bndlib</artifactId>
-            <version>1.43.0</version>
-            <scope>provided</scope>
+            <version>1.50.0</version>
         </dependency>
     </dependencies>
 
