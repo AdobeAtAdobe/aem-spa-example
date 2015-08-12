@@ -1,12 +1,16 @@
 
-<div class="hero-carousel" ng-controller='heroCarouselController'>
+<div class="hero-carousel cq-dd-pages" ng-controller='heroCarouselController'>
     <div class="media-area-wrapper">
 
-        <ul rn-carousel rn-carousel-auto-slide="${resource.playSpeed}" class="carousel" data-sly-list="${resource.pages}" rn-carousel-index="carouselIndex" rn-carousel-buffered>
+        <ul data-sly-test="${resource.pages}" rn-carousel rn-carousel-auto-slide="${resource.playSpeed}" class="carousel" data-sly-list="${resource.pages}" rn-carousel-index="carouselIndex" rn-carousel-buffered>
+            <li class="page"><img src="${item}"/></li>
+        </ul>
+
+        <ul data-sly-test="${!resource.pages}" rn-carousel rn-carousel-auto-slide="${resource.playSpeed}" class="carousel" rn-carousel-index="carouselIndex" rn-carousel-buffered>
             <li class="page"><img src="${item}"/></li>
         </ul>
 
         <div class="navPre" ng-click="carouselIndex = carouselIndex -1" ng-disabled="carouselIndex == 0"></div>
-        <div class="navNext" ng-click="carouselIndex = carouselIndex +1" ng-disabled="carouselIndex == ${resource.pages.length}"></div>
+        <div class="navNext" ng-click="carouselIndex = carouselIndex +1" ng-disabled="carouselIndex == ${resource.pages.length || 0}"></div>
     </div>
 </div>

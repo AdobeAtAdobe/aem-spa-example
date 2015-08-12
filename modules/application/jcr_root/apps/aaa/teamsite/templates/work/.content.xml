@@ -14,9 +14,16 @@
             jcr:primaryType="nt:unstructured"
             text="HERO TEXT - edit me shows on exploree bubble"/>
         <hero-summary
-            sling:resourceType="aaa/teamsite/components/work/hero-text"
+            sling:resourceType="aaa/teamsite/components/work/text"
             jcr:primaryType="nt:unstructured"
             text="HERO SUMMARY - fun blerb about the project"/>
+        <hero-carousel
+            jcr:lastModified="{Date}2015-03-25T13:14:44.997-07:00"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="aaa/teamsite/components/work/hero_carousel"
+            pages="[/content/dam/temp-teamsite/work/cmo/CMO_1_1280.png,/content/dam/temp-teamsite/work/cmo/CMO_2_1280.png,/content/dam/temp-teamsite/work/cmo/CMO_3_1280.png]"
+            playSpeed="6"/>
         <sections-container
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/parsys">

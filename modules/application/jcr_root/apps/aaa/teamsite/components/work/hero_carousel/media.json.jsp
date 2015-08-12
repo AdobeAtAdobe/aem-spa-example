@@ -27,7 +27,6 @@
         writer.setTidy("true".equals(request.getParameter("tidy")));
         writer.object();
         writer.key("mediaItems").value(mediaItems);
-        writer.key("testing").value("my");
         writer.endObject();
 
     }

@@ -16,7 +16,7 @@
             text="CC Tutorials"/>
         <hero-summary
             jcr:primaryType="nt:unstructured"
-            sling:resourceType="aaa/teamsite/components/work/hero_text"
+            sling:resourceType="aaa/teamsite/components/work/text"
             text="On the legs of Adobe Experience Manager and Digital Publishing suite, its a winner, and oh... its only the beginning :)"/>
         <hero-carousel
             jcr:lastModified="{Date}2015-03-25T13:07:08.331-07:00"
