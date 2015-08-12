@@ -14,7 +14,7 @@
             jcr:primaryType="nt:unstructured"
             text="HERO TEXT - edit me shows on exploree bubble"/>
         <hero-summary
-            sling:resourceType="aaa/teamsite/components/work/hero-text"
+            sling:resourceType="aaa/teamsite/components/work/text"
             jcr:primaryType="nt:unstructured"
             text="HERO SUMMARY - fun blerb about the project"/>
         <hero-carousel

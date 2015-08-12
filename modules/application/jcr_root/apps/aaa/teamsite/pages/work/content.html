@@ -4,7 +4,7 @@
             <div class="hero-text" data-sly-resource="${'hero-text' @ resourceType='aaa/teamsite/components/work/hero_text'}"></div>
             <div class="hero-summary"data-sly-resource="${'hero-summary' @ resourceType='aaa/teamsite/components/work/text'}"></div>
 
-            <div data-sly-resource="${'hero-carousel' @ resourceType='aaa/teamsite/components/work/hero_carousel'}"></div>
+            <div data-sly-resource="${@ path='hero-carousel',resourceType='aaa/teamsite/components/work/hero_carousel'}"></div>
 
         </div>
 
@@ -14,7 +14,7 @@
                 <div class="sectionsContainer" data-sly-resource="${'sections-container' @ resourceType='wcm/foundation/components/parsys'}">
                 </div>
 
-                <div data-sly-resource="${'project-info' @ resourceType='aaa/teamsite/components/work/project_info'}" data-sly-unwrap></div>
+                <div data-sly-resource="${'project-info' @ resourceType='aaa/teamsite/components/work/project_info'}"></div>
             </div>
         </div>
     </article>
