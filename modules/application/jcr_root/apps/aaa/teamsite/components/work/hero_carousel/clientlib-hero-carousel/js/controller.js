@@ -1,26 +1,5 @@
-/*
- *
- * ADOBE CONFIDENTIAL
- * __________________
- *
- *  Copyright 2013 Adobe Systems Incorporated
- *  All Rights Reserved.
- *
- * NOTICE:  All information contained herein is, and remains
- * the property of Adobe Systems Incorporated and its suppliers,
- * if any.  The intellectual and technical concepts contained
- * herein are proprietary to Adobe Systems Incorporated and its
- * suppliers and are protected by trade secret or copyright law.
- * Dissemination of this information or reproduction of this material
- * is strictly forbidden unless prior written permission is obtained
- * from Adobe Systems Incorporated.
- */
 //TODO:make this stand outside the application scope so its not hardcoded to our app
 teamSite.controller('heroCarouselController', ['$scope', '$http', '$timeout','$log', function($scope,$http,$timeout,$log) {
-    $log.debug("heroCarouselController");
-
-
-
     //this should be moved into the directive for the carousel.
     //going to cause problems if more than 1 carousel
     //also dom manipulation outside a directive is bad practice -.-
@@ -52,15 +31,7 @@ teamSite.controller('heroCarouselController', ['$scope', '$http', '$timeout','$l
 
         mediaWrapper.css('width',newWidth);
         mediaWrapper.css('height',newHeight);
-
-
-        //set get the max width that the media wrapper should be, which is limitedWidth
-        //then get the padding on it
-
-
-
     };
-
 
     $(window).on('resize', resizeHeroCarouselContainer);
 
@@ -73,8 +44,4 @@ teamSite.controller('heroCarouselController', ['$scope', '$http', '$timeout','$l
     );
 
     resizeHeroCarouselContainer();
-
-
-
-
 }]);

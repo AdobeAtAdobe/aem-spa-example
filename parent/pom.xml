@@ -66,16 +66,16 @@
     </scm>
 
     <properties>
-        <crx.host>localhost</crx.host>
+        <crx.host>192.168.99.100</crx.host>
         <crx.port>4502</crx.port>
         <crx.packagemanager.endpoint>/crx/packmgr/service.jsp</crx.packagemanager.endpoint>
 
-        <publish.crx.host>localhost</publish.crx.host>
+        <publish.crx.host>192.168.99.100</publish.crx.host>
         <publish.crx.port>4503</publish.crx.port>
         <publish.crx.username>admin</publish.crx.username>
         <publish.crx.password>admin</publish.crx.password>
 
-        <author.crx.host>localhost</author.crx.host>
+        <author.crx.host>192.168.99.100</author.crx.host>
         <author.crx.port>4502</author.crx.port>
         <author.crx.username>admin</author.crx.username>
         <author.crx.password>admin</author.crx.password>
