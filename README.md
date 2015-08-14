@@ -15,5 +15,5 @@ This has only been tested with 6.1 at this point. Also all our components only s
 I will be adding a link to the slide share from the talk once its been posted.
 
 People using this pattern
-Shaklee Corporation
-Adobe - Adobe at Adobe team
+- Shaklee Corporation
+- Adobe - Adobe at Adobe team
