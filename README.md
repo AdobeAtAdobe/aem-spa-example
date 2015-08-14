@@ -12,7 +12,7 @@ Prerequisites
 
 This has only been tested with 6.1 at this point. Also all our components only support Touch UI.
 
-I will be adding a link to the slide share from the talk once its been posted.
+[Slide share from Connect WE talk](http://www.slideshare.net/AdobeMarketingCloud/build-single-page-applications-using-angularjs-on-aem-51639249?utm_source=slideshow&utm_medium=ssemail&utm_campaign=post_upload_view_cta)
 
 People using this pattern
 - Shaklee Corporation
